@@ -17,7 +17,7 @@ export default function MainBox() {
           <button className={`px-1 sm:px-8 text-xs sm:text-lg rounded-t-2xl py-4 rounded ${selectedTab == 1 ? 'bg-white' : 'bg-gray-100'} flex items-center justify-center drop-shadow-[0_5px_10px_rgba(0,0,0,0.2)]`}
             onClick={() => setSelectedTab(1)}
           >
-            <Icon icon="mdi:database-clock" width="20" color="gray" />
+            <img src="/img/seed.png" width="20" alt="" />
             <div className="ml-2">Seed Contribution</div>
           </button>
           <button className={`px-1 sm:px-8 text-xs sm:text-lg rounded-t-2xl py-4 rounded  ${selectedTab == 2 ? 'bg-white' : 'bg-gray-100'} drop-shadow-[0_5px_10px_rgba(0,0,0,0.2)] flex items-center justify-center`}
@@ -29,7 +29,7 @@ export default function MainBox() {
           <button className={`px-1 sm:px-8 text-xs sm:text-lg rounded-t-2xl py-4 rounded  ${selectedTab == 3 ? 'bg-white' : 'bg-gray-100'} drop-shadow-[0_5px_10px_rgba(0,0,0,0.2)] flex items-center justify-center`}
             onClick={() => setSelectedTab(3)}
           >
-            <Icon icon="mdi:database-clock" width="20" color="gray" />
+            <img src="/img/blueprint.png" width="20" alt="" />
             <div className="ml-2">Blueprint</div>
           </button>
         </div>
