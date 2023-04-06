@@ -37,16 +37,6 @@ export default function MainBox() {
         {
           selectedTab === 1 &&
           <div className="drop-shadow-[0_14px_10px_rgba(0,0,0,0.1)] rounded-t-lg border-none font-light rounded-2xl p-8 rounded text-gray-500 bg-white">
-            <div className="text-red">D i s c or d: Kei#2353</div>
-            <div className="text-red">Te l eg ram: ninjadev0706</div>
-            <div className="text-red">
-              Can you manage bonus $100 as crypto?
-              and can we work here?
-              Because of the fee.
-              as you know, fiverr fee is 20% and pending period is 14 days.
-              also when withdrawing it, need another fee.
-              so if you are okay, we can work directly.
-            </div>
             <div>
               <div className="flex w-full flex-col items-center">
                 <ConnectButton />
