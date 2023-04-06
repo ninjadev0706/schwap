@@ -13,12 +13,12 @@ export default function MainBox() {
   return (
     <div className="max-w-[800px] m-auto w-11/12 text-black">
       <div>
-        <div className="grid grid-cols-3 gap-5 px-1 sm:px-5 mb-[-10px]">
+        <div className="grid grid-cols-3 gap-2 sm:gap-5 px-1 sm:px-5 mb-[-10px]">
           <button className={`px-1 sm:px-8 text-xs sm:text-lg rounded-t-2xl py-4 rounded ${selectedTab == 1 ? 'bg-white' : 'bg-gray-100'} flex items-center justify-center drop-shadow-[0_5px_10px_rgba(0,0,0,0.2)]`}
             onClick={() => setSelectedTab(1)}
           >
             <img src="/img/seed.png" width="20" alt="" />
-            <div className="ml-2">Seed Contribution</div>
+            <div className="ml-2">Contribution</div>
           </button>
           <button className={`px-1 sm:px-8 text-xs sm:text-lg rounded-t-2xl py-4 rounded  ${selectedTab == 2 ? 'bg-white' : 'bg-gray-100'} drop-shadow-[0_5px_10px_rgba(0,0,0,0.2)] flex items-center justify-center`}
             onClick={() => setSelectedTab(2)}
