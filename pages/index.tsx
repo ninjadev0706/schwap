@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Arbitpad</title>
-        <meta name="description" content="Insured IDO Launchpad On Arbitrum" />
+        <title>SCHWAP</title>
+        <meta name="description" content="Schwap, a Trustless, Permissionless, and Sizable Decentralized OTC Market." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
