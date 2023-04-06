@@ -171,3 +171,7 @@ a {
   background: inherit;
   border-radius: inherit;
 }
+
+.input_wrap {
+  width: calc(100% - 60px);
+}
