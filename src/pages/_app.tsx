@@ -8,15 +8,10 @@ import { useState, useEffect } from 'react'
 import HeadGlobal from 'components/HeadGlobal'
 // Web3Wrapper deps:
 import { getDefaultWallets, RainbowKitProvider, lightTheme, darkTheme } from '@rainbow-me/rainbowkit'
-import {
-  injectedWallet,
-  metaMaskWallet,
-  braveWallet,
-  coinbaseWallet,
-  walletConnectWallet,
-  ledgerWallet,
-  rainbowWallet,
-} from '@rainbow-me/rainbowkit/wallets'
+import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
+import { InjectedConnector } from 'wagmi/connectors/injected'
+import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
+import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { Chain } from '@rainbow-me/rainbowkit'
 import { arbitrum } from 'wagmi/chains'
 import { createClient, configureChains, WagmiConfig } from 'wagmi'
@@ -37,7 +32,28 @@ const { connectors } = getDefaultWallets({
 
 const wagmiClient = createClient({
   autoConnect: true,
-  connectors,
+  connectors: [
+    new MetaMaskConnector({ chains }),
+    new CoinbaseWalletConnector({
+      chains,
+      options: {
+        appName: 'wagmi',
+      },
+    }),
+    new WalletConnectConnector({
+      chains,
+      options: {
+        projectId: '359fc5e059fbd15f68fff8a3f391894c',
+      },
+    }),
+    new InjectedConnector({
+      chains,
+      options: {
+        name: 'Injected',
+        shimDisconnect: true,
+      },
+    }),
+  ],
   provider
 });
 
