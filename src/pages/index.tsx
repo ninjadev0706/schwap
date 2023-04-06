@@ -18,7 +18,7 @@ function Header() {
       <div className={`${styles.box_shadow}`}>
         <div className='rounded-xl p-4 px-10 bg-gray-200 z-10 relative'>
           <a href="https://schwap.app">
-            <img src="/schwap_logo.png" width="50" alt="" />
+            <img src="/img/logo.png" width="50" alt="" />
           </a>
         </div>
       </div>
