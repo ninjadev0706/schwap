@@ -41,22 +41,25 @@ export default function MainBox() {
                 <div className="flex w-full flex-col items-center">
                   <ConnectButton />
                 </div>
-                <div className="max-w-[250px] m-auto">
-                  <div className="bg-gray-100 py-1 rounded-xl mt-10">
-                    <input
-                      className='bg-transparent px-1 outline-none'
-                      placeholder='0'
-                      value={fromAmount}
-                      onChange={(e) => {
-                        const RE = /^\d*\.?\d{0,18}$/
-                        if (RE.test(e.currentTarget.value)) {
-                          setFromAmount((e.target.value as any));
-                        }
-                      }}
-                    />
-                    <button className="bg-white px-2 py-1 rounded-xl">Send</button>
+                {
+                  isConnected &&
+                  <div className="max-w-[250px] m-auto">
+                    <div className="bg-gray-100 py-1 rounded-xl mt-10">
+                      <input
+                        className='bg-transparent px-1 outline-none'
+                        placeholder='0'
+                        value={fromAmount}
+                        onChange={(e) => {
+                          const RE = /^\d*\.?\d{0,18}$/
+                          if (RE.test(e.currentTarget.value)) {
+                            setFromAmount((e.target.value as any));
+                          }
+                        }}
+                      />
+                      <button className="bg-white px-2 py-1 rounded-xl">Send</button>
+                    </div>
                   </div>
-                </div>
+                }
               </div>
             </div>
           }
