@@ -18,7 +18,8 @@ export default function MainBox() {
             onClick={() => setSelectedTab(1)}
           >
             <img src="/img/seed.png" width="20" alt="" />
-            <div className="ml-2">Contribution</div>
+            <div className="hidden sm:block ml-2">Seed Contribution</div>
+            <div className="block sm:hidden ml-2">Contribution</div>
           </button>
           <button className={`px-1 sm:px-8 text-xs sm:text-lg rounded-t-2xl py-4 rounded  ${selectedTab == 2 ? 'bg-white' : 'bg-gray-100'} drop-shadow-[0_5px_10px_rgba(0,0,0,0.2)] flex items-center justify-center`}
             onClick={() => setSelectedTab(2)}
