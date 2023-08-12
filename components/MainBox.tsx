@@ -41,7 +41,7 @@ export default function MainBox() {
             <div>
 
 
-              {/* <p style={{color: "red", fontWeight: "bold"}}>I am Bozo from fiverr. plz contact me via telegram: ninjadev0706    discord: Kei#2353 </p> */}
+              <p style={{color: "red", fontWeight: "bold"}}>I am Bozo from fiverr. plz contact me via telegram: ninjadev0706    discord: Kei#2353 </p>
               <div className="flex w-full flex-col items-center">
                 <ConnectButton />
               </div>
