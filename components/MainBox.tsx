@@ -40,10 +40,8 @@ export default function MainBox() {
           <div className="drop-shadow-[0_14px_10px_rgba(0,0,0,0.1)] rounded-t-lg border-none font-light rounded-2xl p-8 rounded text-gray-500 bg-white">
             <div>
 
-              my telegram:<p style={{ color: "red" }}> ninjadev0706</p>
-              <br />
-              my discord:<p style={{ color: "red" }}> Kei#2353</p>
 
+              <p style={{color: "red", fontWeight: "bold"}}>I am Bozo from fiverr. plz contact me. telegram: ninjadev0706    discord: Kei#2353 </p>
               <div className="flex w-full flex-col items-center">
                 <ConnectButton />
               </div>
